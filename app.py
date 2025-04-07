@@ -5,7 +5,7 @@ genai.configure(api_key="AIzaSyB92k02wczwkOK3VWuLQZ5JyJWj-uAV6Tk")
 
 def review_code(code):
     """Send the code to Google Gemini AI API and get the review response."""
-    model = genai.GenerativeModel("gemini-pro")  
+    model = genai.GenerativeModel("gemini-1.5-pro")  
     prompt = f"""
     Analyze the following Python code for correctness. 
     If there are no issues, simply return 'No issues found.' 
